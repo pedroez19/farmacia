@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Produtos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de categorias e produtos -->
+        <section id="categorias">
+            <!-- Categoria: Medicamentos -->
+            <h2>Medicamentos</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="imagens/cim.webp" alt="Medicamento 1">
+                    <p>CIMEGRIPE 20 CÁPSULAS - R$ 13,23</p>
+                    <button onclick="addToCart(1, 'Nome do Medicamento 1', 13.23)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/dor.webp" alt="Medicamento 2">
+                    <p>DORFLEX 50 COMPRIMIDOS - R$ 24,61</p>
+                    <button onclick="addToCart(2, 'Nome do Medicamento 2', 24,61)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/dip.webp" alt="Medicamento 3">
+                    <p>DIPIRONA 500MG GENÉRICO EMS 10 COMPRIMIDOS - R$ 7,47</p>
+                    <button onclick="addToCart(3, 'Nome do Medicamento 3', 7.47)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Categoria: Produtos para Bebês -->
+<h2>Produtos para Bebês</h2>
+<div class="produtos">
+    <div class="produto">
+        <img src="imagens/chu.webp" alt="Produto para Bebê 1">
+        <p>CHUPETA DE SILICONE NUK S3 18M+ SPACE BOY PA7333-3B COM 1UNIDADE - R$ 29,39</p>
+        <button onclick="addToCart(4, 'Nome do Produto para Bebê 1', 29.39)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="produto">
+        <img src="imagens/ma.webp" alt="Produto para Bebê 2">
+        <p>MAMADEIRA MAM EASY START NEUTRA 130ML - R$ 43,29</p>
+        <button onclick="addToCart(5, 'Nome do Produto para Bebê 2', 43.29)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="produto">
+        <img src="imagens/fra.webp" alt="Produto para Bebê 3">
+        <p>FRALDA GERIÁTRICA TENA SLIP NOTURNA G 16 UNIDADES - R$ 59,49</p>
+        <button onclick="addToCart(6, 'Nome do Produto para Bebê 3', 59.49)">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+<!-- Categoria: Higiene Bucal -->
+<h2>Higiene Bucal</h2>
+<div class="produtos">
+    <div class="produto">
+        <img src="imagens/buc.webp" alt="Produto de Higiene Bucal 1">
+        <p>ENXAGUANTE BUCAL LISTERINE ZERO MENTA SUAVE 250ML - R$ 13,76</p>
+        <button onclick="addToCart(7, 'Nome do Produto de Higiene Bucal 1', 13.76)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="produto">
+        <img src="imagens/es.webp" alt="Produto de Higiene Bucal 2">
+        <p>ESCOVA DE DENTE ORAL-B ICONIC PREMIUM 1UNIDADE - R$ 18,41</p>
+        <button onclick="addToCart(8, 'Nome do Produto de Higiene Bucal 2', 18.41)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="produto">
+        <img src="imagens/pas.webp" alt="Produto de Higiene Bucal 3">
+        <p>CREME DENTAL ORAL-B 100% 120G - R$ 6,23</p>
+        <button onclick="addToCart(9, 'Nome do Produto de Higiene Bucal 3', 6.23)">Adicionar ao Carrinho</button>
+    </div>
+</div>

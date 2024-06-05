@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Equilíbrio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Farmácia Equilíbrio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de destaques dos produtos -->
+        <section id="destaques">
+            <h2>Destaques</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="imagens/buc.webp" alt="Produto em Destaque 1">
+                    <p>ENXAGUANTE BUCAL LISTERINE ZERO MENTA SUAVE 250ML - R$ 13,76</p>
+                    <button onclick="addToCart(1, 'Nome do Produto em Destaque 1', 25.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/dor.webp" alt="Produto em Destaque 2">
+                    <p>DORFLEX 50 COMPRIMIDOS - R$ 24,61</p>
+                    <button onclick="addToCart(2, 'Nome do Produto em Destaque 2', 30.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/fra.webp" alt="Produto em Destaque 3">
+                    <p>FRALDA GERIÁTRICA TENA SLIP NOTURNA G 16 UNIDADES - R$ 59,49</p>
+                    <button onclick="addToCart(3, 'Nome do Produto em Destaque 3', 35.00)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farmácia Equilíbrio</p>
+    </footer>
+</body>
+</html>

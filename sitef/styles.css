@@ -46,6 +46,14 @@ main {
 }
 
 .product {
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex; /* Usa flexbox para centralizar verticalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.product {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
@@ -57,6 +65,11 @@ main {
 .product img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex; /* Usa flexbox para centralizar verticalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
 .product h3 {
