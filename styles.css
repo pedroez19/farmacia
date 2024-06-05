@@ -1,25 +1,29 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: #f0f0f0; /* cinza claro */
+    color: #333; /* cinza escuro para o texto */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1e2952; /* azul escuro */
     color: white;
-    padding: 1rem;
-    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -27,49 +31,58 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.product-list {
+main {
+    padding: 20px;
+}
+
+#featured-products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.product-list li {
-    list-style: none;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    width: 200px;
-    text-align: center;
+.product {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.product-list img {
-    max-width: 100%;
-    height: auto;
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    color: #1e2952; /* azul escuro */
+}
+
+.product p {
+    color: #666; /* cinza médio */
+}
+
+button {
+    background-color: #d21f3c; /* vermelho */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20e2c; /* vermelho escuro */
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #1e2952; /* azul escuro */
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form label, form input, form textarea, form button {
-    margin: 0.5rem 0;
-    width: 100%;
-    max-width: 300px;
 }

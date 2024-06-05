@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Produto</title>
+    <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Detalhes do Produto</h1>
+        <h1>Carrinho de Compras</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="catalog.html">Produto</a></li>
                 <li><a href="contact.html">Contato</a></li>
                 <li><a href="cart.html">Carrinho (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2 id="product-name">Nome do Remédio</h2>
-        <img src="images/remedio1.jpg" alt="Remédio 1" id="product-image">
-        <p id="product-description">Descrição detalhada do remédio, seus usos, dosagem, e outras informações relevantes.</p>
-        <p><strong id="product-price">Preço: R$ 20,00</strong></p>
-        <button onclick="addToCart(1, 'Nome do Remédio', 20.00)">Adicionar ao Carrinho</button>
+        <h2>Seu Carrinho</h2>
+        <ul id="cart-items">
+            <!-- Os itens do carrinho serão inseridos aqui via JavaScript -->
+        </ul>
+        <p><strong>Total: R$ <span id="total-price">0,00</span></strong></p>
+        <button onclick="checkout()">Finalizar Compra</button>
+        <div id="notification"></div> <!-- Área para exibir notificações -->
     </main>
     <footer>
-        <p>&copy; 2024 Farmácia Online</p>
+        <p>&copy; 2024 Farmácia Equilíbrio</p>
     </footer>
 </body>
 </html>

@@ -3,42 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Remédios</title>
+    <title>Produtos - Farmácia Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Catálogo de Remédios</h1>
+        <h1>Produtos</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="catalog.html">Catálogo</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="#remedios" onclick="showCategory('remedios')">Remédios</a></li>
+                <li><a href="#produtos-bebe" onclick="showCategory('produtos-bebe')">Produtos de Bebê</a></li>
+                <li><a href="#higiene-bucal" onclick="showCategory('higiene-bucal')">Higiene Bucal</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Nossos Produtos</h2>
-        <ul class="product-list">
-            <li>
-                <a href="product.html?id=1">
-                    <img src="images/remedio1.jpg" alt="Remédio 1">
-                    <h3>Remédio 1</h3>
-                    <p>Descrição do Remédio 1.</p>
-                </a>
-            </li>
-            <li>
-                <a href="product.html?id=2">
-                    <img src="images/remedio2.jpg" alt="Remédio 2">
-                    <h3>Remédio 2</h3>
-                    <p>Descrição do Remédio 2.</p>
-                </a>
-            </li>
-            <!-- Adicione mais produtos conforme necessário -->
-        </ul>
+        <section id="product-categories">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#remedios" onclick="showCategory('remedios')">Remédios</a></li>
+                <li><a href="#produtos-bebe" onclick="showCategory('produtos-bebe')">Produtos de Bebê</a></li>
+                <li><a href="#higiene-bucal" onclick="showCategory('higiene-bucal')">Higiene Bucal</a></li>
+            </ul>
+        </section>
+        <section id="remedios" class="category">
+            <h2>Remédios</h2>
+            <div class="product">
+                <h3>Nome do Remédio 1</h3>
+                <p>R$ 20,00</p>
+                <button onclick="addToCart(1, 'Nome do Remédio 1', 20.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Nome do Remédio 2</h3>
+                <p>R$ 30,00</p>
+                <button onclick="addToCart(2, 'Nome do Remédio 2', 30.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Nome do Remédio 3</h3>
+                <p>R$ 25,00</p>
+                <button onclick="addToCart(3, 'Nome do Remédio 3', 25.00)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section id="produtos-bebe" class="category">
+            <h2>Produtos de Bebê</h2>
+            <div class="product">
+                <h3>Nome do Produto de Bebê 1</h3>
+                <p>R$ 15,00</p>
+                <button onclick="addToCart(4, 'Nome do Produto de Bebê 1', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Nome do Produto de Bebê 2</h3>
+                <p>R$ 20,00</p>
+                <button onclick="addToCart(5, 'Nome do Produto de Bebê 2', 20.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Nome do Produto de Bebê 3</h3>
+                <p>R$ 10,00</p>
+                <button onclick="addToCart(6, 'Nome do Produto de Bebê 3', 10.00)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section id="higiene-bucal" class="category">
+            <h2>Higiene Bucal</h2>
+            <div class="product">
+                <h3>Nome do Produto de Higiene Bucal 1</h3>
+                <p>R$ 8,00</p>
+                <button onclick="addToCart(7, 'Nome do Produto de Higiene Bucal 1', 8.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Nome do Produto de Higiene Bucal 2</h3>
+                <p>R$ 12,00</p>
+                <button onclick="addToCart(8, 'Nome do Produto de Higiene Bucal 2', 12.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Nome do Produto de Higiene Bucal 3</h3>
+                <p>R$ 6,00</p>
+                <button onclick="addToCart(9, 'Nome do Produto de Higiene Bucal 3', 6.00)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Farmácia Online</p>
+        <p>&copy; 2024 Farmácia Equilíbrio</p>
     </footer>
+
+    <script>
+        function showCategory(category) {
+            // Oculta todas as seções de categoria
+            let categories = document.getElementsByClassName('category');
+            for (let i = 0; i < categories.length; i++) {
+                categories[i].style.display = 'none';
+            }
+
+            // Exibe apenas a seção da categoria selecionada
+            document.getElementById(category).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
